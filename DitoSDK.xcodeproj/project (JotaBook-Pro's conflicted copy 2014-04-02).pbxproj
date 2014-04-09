@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F03F4FC30944DB0A6F25692 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5900A59C86534F7EAB68E434 /* libPods.a */; };
+		8434BFED18CFA179008BD9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8434BFEC18CFA179008BD9CC /* Foundation.framework */; };
+		8434BFF218CFA17A008BD9CC /* DitoSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8434BFF118CFA17A008BD9CC /* DitoSDK.h */; };
+		8434BFF418CFA17A008BD9CC /* DitoSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434BFF318CFA17A008BD9CC /* DitoSDK.m */; };
+		8434BFFB18CFA17A008BD9CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8434BFFA18CFA17A008BD9CC /* XCTest.framework */; };
+		8434BFFC18CFA17A008BD9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8434BFEC18CFA179008BD9CC /* Foundation.framework */; };
+		8434BFFE18CFA17A008BD9CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8434BFFD18CFA17A008BD9CC /* UIKit.framework */; };
+		8434C00118CFA17A008BD9CC /* libDitoSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8434BFE918CFA179008BD9CC /* libDitoSDK.a */; };
+		8434C00718CFA17A008BD9CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8434C00518CFA17A008BD9CC /* InfoPlist.strings */; };
+		8434C00918CFA17A008BD9CC /* DitoSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434C00818CFA17A008BD9CC /* DitoSDKTests.m */; };
+		8436D18818EB96D10039F235 /* RSOAuthEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436D18518EB96D10039F235 /* RSOAuthEngine.m */; };
+		8436D18918EB96D10039F235 /* RSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436D18718EB96D10039F235 /* RSTwitterEngine.m */; };
+		8436D18B18EB96F90039F235 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8436D18A18EB96F90039F235 /* GoogleOpenSource.framework */; };
+		8436D18E18EB97250039F235 /* GooglePlusLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436D18D18EB97250039F235 /* GooglePlusLogin.m */; };
+		8436D19118EC30200039F235 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8436D19018EC30200039F235 /* GooglePlus.framework */; };
+		84A0192A18CFAB9200EF94B2 /* FacebookLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0192918CFAB9200EF94B2 /* FacebookLogin.m */; };
+		84A0192C18CFABBD00EF94B2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A0192B18CFABBD00EF94B2 /* FacebookSDK.framework */; };
+		84A3F41118D0E8C000159677 /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F40A18D0E8C000159677 /* TWAPIManager.m */; };
+		84A3F41318D0E8C000159677 /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F40E18D0E8C000159677 /* TWSignedRequest.m */; };
+		84A3F41418D0E8C000159677 /* TWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F41018D0E8C000159677 /* TWViewController.m */; };
+		84A3F41C18D0E95200159677 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F41718D0E95200159677 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84A3F41D18D0E95200159677 /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F41918D0E95200159677 /* OAuth+Additions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84A3F41E18D0E95200159677 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F41B18D0E95200159677 /* OAuthCore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84A3F43A18D0FD4F00159677 /* TwitterLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F43918D0FD4F00159677 /* TwitterLogin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8434BFFF18CFA17A008BD9CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8434BFE118CFA179008BD9CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8434BFE818CFA179008BD9CC;
+			remoteInfo = DitoSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8434BFE718CFA179008BD9CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8434BFF218CFA17A008BD9CC /* DitoSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5900A59C86534F7EAB68E434 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8434BFE918CFA179008BD9CC /* libDitoSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDitoSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8434BFEC18CFA179008BD9CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8434BFF018CFA179008BD9CC /* DitoSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DitoSDK-Prefix.pch"; sourceTree = "<group>"; };
+		8434BFF118CFA17A008BD9CC /* DitoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DitoSDK.h; sourceTree = "<group>"; };
+		8434BFF318CFA17A008BD9CC /* DitoSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DitoSDK.m; sourceTree = "<group>"; };
+		8434BFF918CFA17A008BD9CC /* DitoSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DitoSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8434BFFA18CFA17A008BD9CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8434BFFD18CFA17A008BD9CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8434C00418CFA17A008BD9CC /* DitoSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DitoSDKTests-Info.plist"; sourceTree = "<group>"; };
+		8434C00618CFA17A008BD9CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8434C00818CFA17A008BD9CC /* DitoSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DitoSDKTests.m; sourceTree = "<group>"; };
+		8436D18418EB96D10039F235 /* RSOAuthEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOAuthEngine.h; sourceTree = "<group>"; };
+		8436D18518EB96D10039F235 /* RSOAuthEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOAuthEngine.m; sourceTree = "<group>"; };
+		8436D18618EB96D10039F235 /* RSTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTwitterEngine.h; sourceTree = "<group>"; };
+		8436D18718EB96D10039F235 /* RSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTwitterEngine.m; sourceTree = "<group>"; };
+		8436D18A18EB96F90039F235 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		8436D18C18EB97250039F235 /* GooglePlusLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglePlusLogin.h; sourceTree = "<group>"; };
+		8436D18D18EB97250039F235 /* GooglePlusLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglePlusLogin.m; sourceTree = "<group>"; };
+		8436D18F18EB97520039F235 /* DitoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DitoConstants.h; sourceTree = "<group>"; };
+		8436D19018EC30200039F235 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		84A0192818CFAB9200EF94B2 /* FacebookLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookLogin.h; sourceTree = "<group>"; };
+		84A0192918CFAB9200EF94B2 /* FacebookLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookLogin.m; sourceTree = "<group>"; };
+		84A0192B18CFABBD00EF94B2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		84A3F40918D0E8C000159677 /* TWAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAPIManager.h; sourceTree = "<group>"; };
+		84A3F40A18D0E8C000159677 /* TWAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAPIManager.m; sourceTree = "<group>"; };
+		84A3F40D18D0E8C000159677 /* TWSignedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignedRequest.h; sourceTree = "<group>"; };
+		84A3F40E18D0E8C000159677 /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
+		84A3F40F18D0E8C000159677 /* TWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWViewController.h; sourceTree = "<group>"; };
+		84A3F41018D0E8C000159677 /* TWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWViewController.m; sourceTree = "<group>"; };
+		84A3F41618D0E95200159677 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		84A3F41718D0E95200159677 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		84A3F41818D0E95200159677 /* OAuth+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+Additions.h"; sourceTree = "<group>"; };
+		84A3F41918D0E95200159677 /* OAuth+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+Additions.m"; sourceTree = "<group>"; };
+		84A3F41A18D0E95200159677 /* OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCore.h; sourceTree = "<group>"; };
+		84A3F41B18D0E95200159677 /* OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCore.m; sourceTree = "<group>"; };
+		84A3F43818D0FD4F00159677 /* TwitterLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterLogin.h; sourceTree = "<group>"; };
+		84A3F43918D0FD4F00159677 /* TwitterLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterLogin.m; sourceTree = "<group>"; };
+		FA00DB3C06DE492D8AF5C00D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8434BFE618CFA179008BD9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8436D19118EC30200039F235 /* GooglePlus.framework in Frameworks */,
+				8434BFED18CFA179008BD9CC /* Foundation.framework in Frameworks */,
+				2F03F4FC30944DB0A6F25692 /* libPods.a in Frameworks */,
+				8436D18B18EB96F90039F235 /* GoogleOpenSource.framework in Frameworks */,
+				84A0192C18CFABBD00EF94B2 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8434BFF618CFA17A008BD9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8434C00118CFA17A008BD9CC /* libDitoSDK.a in Frameworks */,
+				8434BFFB18CFA17A008BD9CC /* XCTest.framework in Frameworks */,
+				8434BFFE18CFA17A008BD9CC /* UIKit.framework in Frameworks */,
+				8434BFFC18CFA17A008BD9CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8434BFE018CFA179008BD9CC = {
+			isa = PBXGroup;
+			children = (
+				8434BFEE18CFA179008BD9CC /* DitoSDK */,
+				8434C00218CFA17A008BD9CC /* DitoSDKTests */,
+				8434BFEB18CFA179008BD9CC /* Frameworks */,
+				8434BFEA18CFA179008BD9CC /* Products */,
+				FA00DB3C06DE492D8AF5C00D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		8434BFEA18CFA179008BD9CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8434BFE918CFA179008BD9CC /* libDitoSDK.a */,
+				8434BFF918CFA17A008BD9CC /* DitoSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8434BFEB18CFA179008BD9CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8436D18318EB96D10039F235 /* RSOAuthEngine */,
+				84A3F41518D0E95200159677 /* ABOAuthCore */,
+				84A3F40818D0E8C000159677 /* Twitter */,
+				84A0192B18CFABBD00EF94B2 /* FacebookSDK.framework */,
+				8436D19018EC30200039F235 /* GooglePlus.framework */,
+				8436D18A18EB96F90039F235 /* GoogleOpenSource.framework */,
+				8434BFEC18CFA179008BD9CC /* Foundation.framework */,
+				8434BFFA18CFA17A008BD9CC /* XCTest.framework */,
+				8434BFFD18CFA17A008BD9CC /* UIKit.framework */,
+				5900A59C86534F7EAB68E434 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8434BFEE18CFA179008BD9CC /* DitoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8436D18F18EB97520039F235 /* DitoConstants.h */,
+				8434BFF118CFA17A008BD9CC /* DitoSDK.h */,
+				8434BFF318CFA17A008BD9CC /* DitoSDK.m */,
+				84A0192818CFAB9200EF94B2 /* FacebookLogin.h */,
+				84A0192918CFAB9200EF94B2 /* FacebookLogin.m */,
+				84A3F43818D0FD4F00159677 /* TwitterLogin.h */,
+				84A3F43918D0FD4F00159677 /* TwitterLogin.m */,
+				8436D18C18EB97250039F235 /* GooglePlusLogin.h */,
+				8436D18D18EB97250039F235 /* GooglePlusLogin.m */,
+				8434BFEF18CFA179008BD9CC /* Supporting Files */,
+			);
+			path = DitoSDK;
+			sourceTree = "<group>";
+		};
+		8434BFEF18CFA179008BD9CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8434BFF018CFA179008BD9CC /* DitoSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8434C00218CFA17A008BD9CC /* DitoSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				8434C00818CFA17A008BD9CC /* DitoSDKTests.m */,
+				8434C00318CFA17A008BD9CC /* Supporting Files */,
+			);
+			path = DitoSDKTests;
+			sourceTree = "<group>";
+		};
+		8434C00318CFA17A008BD9CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8434C00418CFA17A008BD9CC /* DitoSDKTests-Info.plist */,
+				8434C00518CFA17A008BD9CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8436D18318EB96D10039F235 /* RSOAuthEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8436D18418EB96D10039F235 /* RSOAuthEngine.h */,
+				8436D18518EB96D10039F235 /* RSOAuthEngine.m */,
+				8436D18618EB96D10039F235 /* RSTwitterEngine.h */,
+				8436D18718EB96D10039F235 /* RSTwitterEngine.m */,
+			);
+			path = RSOAuthEngine;
+			sourceTree = "<group>";
+		};
+		84A3F40818D0E8C000159677 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				84A3F40918D0E8C000159677 /* TWAPIManager.h */,
+				84A3F40A18D0E8C000159677 /* TWAPIManager.m */,
+				84A3F40D18D0E8C000159677 /* TWSignedRequest.h */,
+				84A3F40E18D0E8C000159677 /* TWSignedRequest.m */,
+				84A3F40F18D0E8C000159677 /* TWViewController.h */,
+				84A3F41018D0E8C000159677 /* TWViewController.m */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		84A3F41518D0E95200159677 /* ABOAuthCore */ = {
+			isa = PBXGroup;
+			children = (
+				84A3F41618D0E95200159677 /* NSData+Base64.h */,
+				84A3F41718D0E95200159677 /* NSData+Base64.m */,
+				84A3F41818D0E95200159677 /* OAuth+Additions.h */,
+				84A3F41918D0E95200159677 /* OAuth+Additions.m */,
+				84A3F41A18D0E95200159677 /* OAuthCore.h */,
+				84A3F41B18D0E95200159677 /* OAuthCore.m */,
+			);
+			path = ABOAuthCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8434BFE818CFA179008BD9CC /* DitoSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8434C00C18CFA17B008BD9CC /* Build configuration list for PBXNativeTarget "DitoSDK" */;
+			buildPhases = (
+				F9FB4BF00EC342449A269473 /* Check Pods Manifest.lock */,
+				8434BFE518CFA179008BD9CC /* Sources */,
+				8434BFE618CFA179008BD9CC /* Frameworks */,
+				8434BFE718CFA179008BD9CC /* CopyFiles */,
+				F5215529ADBE4B6D9B547655 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DitoSDK;
+			productName = DitoSDK;
+			productReference = 8434BFE918CFA179008BD9CC /* libDitoSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8434BFF818CFA17A008BD9CC /* DitoSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8434C00F18CFA17B008BD9CC /* Build configuration list for PBXNativeTarget "DitoSDKTests" */;
+			buildPhases = (
+				8434BFF518CFA17A008BD9CC /* Sources */,
+				8434BFF618CFA17A008BD9CC /* Frameworks */,
+				8434BFF718CFA17A008BD9CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8434C00018CFA17A008BD9CC /* PBXTargetDependency */,
+			);
+			name = DitoSDKTests;
+			productName = DitoSDKTests;
+			productReference = 8434BFF918CFA17A008BD9CC /* DitoSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8434BFE118CFA179008BD9CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Jota;
+			};
+			buildConfigurationList = 8434BFE418CFA179008BD9CC /* Build configuration list for PBXProject "DitoSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8434BFE018CFA179008BD9CC;
+			productRefGroup = 8434BFEA18CFA179008BD9CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8434BFE818CFA179008BD9CC /* DitoSDK */,
+				8434BFF818CFA17A008BD9CC /* DitoSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8434BFF718CFA17A008BD9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8434C00718CFA17A008BD9CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F5215529ADBE4B6D9B547655 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FB4BF00EC342449A269473 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8434BFE518CFA179008BD9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8436D18918EB96D10039F235 /* RSTwitterEngine.m in Sources */,
+				8436D18818EB96D10039F235 /* RSOAuthEngine.m in Sources */,
+				84A3F41118D0E8C000159677 /* TWAPIManager.m in Sources */,
+				8434BFF418CFA17A008BD9CC /* DitoSDK.m in Sources */,
+				84A3F41C18D0E95200159677 /* NSData+Base64.m in Sources */,
+				84A3F43A18D0FD4F00159677 /* TwitterLogin.m in Sources */,
+				8436D18E18EB97250039F235 /* GooglePlusLogin.m in Sources */,
+				84A3F41318D0E8C000159677 /* TWSignedRequest.m in Sources */,
+				84A0192A18CFAB9200EF94B2 /* FacebookLogin.m in Sources */,
+				84A3F41E18D0E95200159677 /* OAuthCore.m in Sources */,
+				84A3F41418D0E8C000159677 /* TWViewController.m in Sources */,
+				84A3F41D18D0E95200159677 /* OAuth+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8434BFF518CFA17A008BD9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8434C00918CFA17A008BD9CC /* DitoSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8434C00018CFA17A008BD9CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8434BFE818CFA179008BD9CC /* DitoSDK */;
+			targetProxy = 8434BFFF18CFA17A008BD9CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8434C00518CFA17A008BD9CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8434C00618CFA17A008BD9CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8434C00A18CFA17B008BD9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8434C00B18CFA17B008BD9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8434C00D18CFA17B008BD9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA00DB3C06DE492D8AF5C00D /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/DitoSDK.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jota/Dropbox/Work/DitoSDK,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DitoSDK/DitoSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8434C00E18CFA17B008BD9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA00DB3C06DE492D8AF5C00D /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/DitoSDK.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jota/Dropbox/Work/DitoSDK,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DitoSDK/DitoSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8434C01018CFA17B008BD9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DitoSDK/DitoSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DitoSDKTests/DitoSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8434C01118CFA17B008BD9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DitoSDK/DitoSDK-Prefix.pch";
+				INFOPLIST_FILE = "DitoSDKTests/DitoSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8434BFE418CFA179008BD9CC /* Build configuration list for PBXProject "DitoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8434C00A18CFA17B008BD9CC /* Debug */,
+				8434C00B18CFA17B008BD9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8434C00C18CFA17B008BD9CC /* Build configuration list for PBXNativeTarget "DitoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8434C00D18CFA17B008BD9CC /* Debug */,
+				8434C00E18CFA17B008BD9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8434C00F18CFA17B008BD9CC /* Build configuration list for PBXNativeTarget "DitoSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8434C01018CFA17B008BD9CC /* Debug */,
+				8434C01118CFA17B008BD9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8434BFE118CFA179008BD9CC /* Project object */;
+}
