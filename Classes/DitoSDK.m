@@ -48,6 +48,47 @@ static NSString *urlEncode(NSString *string) {
                                         kCFStringEncodingUTF8));
 }
 
+- (NSString *)userAgent
+{
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    
+    NSString *appName = [bundle objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+    if (!appName) {
+        appName = [bundle objectForInfoDictionaryKey:@"CFBundleName"];
+    }
+    
+    NSData *latin1Data = [appName dataUsingEncoding:NSUTF8StringEncoding];
+    appName = [[NSString alloc] initWithData:latin1Data encoding:NSISOLatin1StringEncoding];
+    
+    if (!appName) {
+        return nil;
+    }
+    
+    NSString *appVersion = nil;
+    NSString *marketingVersionNumber = [bundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    NSString *developmentVersionNumber = [bundle objectForInfoDictionaryKey:@"CFBundleVersion"];
+    if (marketingVersionNumber && developmentVersionNumber) {
+        if ([marketingVersionNumber isEqualToString:developmentVersionNumber]) {
+            appVersion = marketingVersionNumber;
+        } else {
+            appVersion = [NSString stringWithFormat:@"%@ rv:%@",marketingVersionNumber,developmentVersionNumber];
+        }
+    } else {
+        appVersion = (marketingVersionNumber ? marketingVersionNumber : developmentVersionNumber);
+    }
+    
+    NSString *deviceName;
+    NSString *OSName;
+    NSString *OSVersion;
+    NSString *locale = [[NSLocale currentLocale] localeIdentifier];
+    
+    UIDevice *device = [UIDevice currentDevice];
+    deviceName = [device model];
+    OSName = [device systemName];
+    OSVersion = [device systemVersion];
+    
+    return [NSString stringWithFormat:@"%@ %@ (%@; %@ %@; %@)", appName, appVersion, deviceName, OSName, OSVersion, locale];
+}
 
 - (NSString *)addParams:(NSDictionary *)params toURL:(NSString *)url
 {
@@ -65,7 +106,7 @@ static NSString *urlEncode(NSString *string) {
              params:(NSMutableDictionary *)params
          completion:(void(^)(id response, NSError *error))completion
 {
-    MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:baseURL customHeaderFields:@{@"Origin": ORIGIN_DOMAIN}];
+    MKNetworkEngine *engine = [[MKNetworkEngine alloc] initWithHostName:baseURL customHeaderFields:@{@"Origin": ORIGIN_DOMAIN, @"User-Agent": [self userAgent]}];
     
     if (params == nil)
         params = [NSMutableDictionary dictionaryWithDictionary:@{@"platform_api_key": API_KEY}];
@@ -85,6 +126,7 @@ static NSString *urlEncode(NSString *string) {
         else
             completion(op.responseJSON, err);
     }];
+    op.freezable = YES;
     
     [engine enqueueOperation:op];
 }
@@ -154,6 +196,20 @@ static NSString *urlEncode(NSString *string) {
     }];
 }
 
+#pragma mark Portal
+
+- (void)doPortalLoginWithSocialID:(NSString *)socialID
+                         userData:(NSDictionary *)userData
+                       completion:(RequestBlock)block
+{
+    NSString *path = [NSString stringWithFormat:@"users/pt/%@/signup", socialID];
+    
+    NSMutableDictionary *params = [NSMutableDictionary new];
+    [params setObject:userData forKey:@"user_data"];
+    
+    [self makeRequest:@"POST" baseURL:kLoginBaseURL path:path params:params completion:block];
+}
+
 #pragma mark - User
 
 - (void)getDataForUserReference:(NSString *)reference
@@ -221,6 +277,55 @@ inUserReference:(NSString *)reference
     [params setObject:(_sorting == 0) ? @"asc" : @"desc" forKey:@"order"];
     
     [self makeRequest:@"POST" baseURL:kEventsBaseURL path:path params:params completion:block];
+}
+
+#pragma mark - Push
+
+- (void)registerDeviceWithToken:(NSData *)tokenData
+                  userReference:(NSString *)reference
+                     completion:(RequestBlock)block
+{
+    NSString *path = [NSString stringWithFormat:@"/users/%@/mobile-tokens", reference];
+    NSString *tokenString = [[[[tokenData description]
+                     stringByReplacingOccurrencesOfString: @"<" withString: @""]
+                    stringByReplacingOccurrencesOfString: @">" withString: @""]
+                   stringByReplacingOccurrencesOfString: @" " withString: @""];
+    
+    NSMutableDictionary *params = [NSMutableDictionary new];
+    [params setObject:tokenString forKey:@"token"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:tokenString forKey:@"__ditosdk__pushToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [self makeRequest:@"POST" baseURL:kNotificationBaseURL path:path params:params completion:block];
+}
+
+- (void)disableDeviceWithUserReference:(NSString *)reference
+                            completion:(RequestBlock)block
+{
+    NSString *path = [NSString stringWithFormat:@"/users/%@/mobile-tokens/disable", reference];
+    
+    NSMutableDictionary *params = [NSMutableDictionary new];
+    [params setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"___ditosdk__pushToken"] forKey:@"token"];
+    
+    [self makeRequest:@"POST" baseURL:kNotificationBaseURL path:path params:params completion:block];
+}
+
+- (NSDictionary *)checkAppLaunchForNotification:(NSDictionary *)launchOptions
+{
+    NSDictionary *notification = [launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
+    if (notification == nil)
+        return nil;
+    else {
+        NSString *path = [NSString stringWithFormat:@"/notifications/%@/open", notification[@"id"]];
+        
+        NSMutableDictionary *params = [NSMutableDictionary new];
+        [params setObject:[self objectToJSONString:notification] forKey:@"data"];
+        
+        [self makeRequest:@"POST" baseURL:kNotificationBaseURL path:path params:params completion:nil];
+        
+        return notification;
+    }
 }
 
 #pragma mark - Encryption

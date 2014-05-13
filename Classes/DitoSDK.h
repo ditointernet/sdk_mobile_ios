@@ -112,6 +112,17 @@ sourceApplication:(NSString *)sourceApplication
  */
 - (void)doGooglePlusLoginWithCompletionHandler:(RequestBlock)completion;
 
+#pragma mark Portal
+
+/** Faz login com portal
+ @param socialID      ID do usuário
+ @param userData      Dados do usuário
+ @param completion    Callback block
+ */
+- (void)doPortalLoginWithSocialID:(NSString *)socialID
+                         userData:(NSDictionary *)userData
+                       completion:(RequestBlock)block;
+
 #pragma mark - User
 
 /**---------------------------------------------------------------------------------------
@@ -180,11 +191,29 @@ inUserReference:(NSString *)reference
  *  ---------------------------------------------------------------------------------------
  */
 
-/** Registra um aparelho no serviço de push
+/** Registra um dispositivo no serviço de push
+ Voce deve implementar o método ```application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken``` no App Delegate e chamar esse metodo nele
+ 
  @param tokenData       NSData do token do aparelho
  @param reference       Reference do usuário
+ @param completion      Callback block
  */
 - (void)registerDeviceWithToken:(NSData *)tokenData
-                  userReference:(NSString *)reference;
+                  userReference:(NSString *)reference
+                     completion:(RequestBlock)block;
+
+/** Desativa o dispositivo no serviço de push
+ @param reference       Reference do usuário
+ @param completion      Callback block
+ */
+- (void)disableDeviceWithUserReference:(NSString *)reference
+                            completion:(RequestBlock)block;
+
+/** Verifica se o app foi aberto a partir de uma notificação
+ @param launchOptions   Parametro launchOptions do método ```application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions``` do AppDelegate
+ 
+ @return ```nil``` caso o app não foi aberto a partir de uma notificação ou o NSDictionary com as informações da notificação
+ */
+- (NSDictionary *)checkAppLaunchForNotification:(NSDictionary *)launchOptions;
 
 @end
