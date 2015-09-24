@@ -418,6 +418,12 @@ static DitoCredentials *credentialsOffLine;
     [params setValue:[self getIdentifyKey:credentials] forKey:kIdType];
     [params setValue:[self getSocialID:credentials] forKey:@"id"];
     
+    if(jsonMessage[@"notification_log_id"]){
+      NSString *notificationLogId = @"";
+      notificationLogId = jsonMessage[@"notification_log_id"]
+      [params setValue:notificationLogId forKey:@"notification_log_id"];
+    }
+    
     [self peformRequest:POST url:url params:params completion:block];
 }
 
