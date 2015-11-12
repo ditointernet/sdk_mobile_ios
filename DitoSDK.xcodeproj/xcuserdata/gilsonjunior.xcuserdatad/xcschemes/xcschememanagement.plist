@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DitoFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>DitoSDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Framework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>869B645F1B13D30400FEE48D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>869B64631B13D31500FEE48D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86F07D551B13CED800E1E980</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86F07D601B13CED800E1E980</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

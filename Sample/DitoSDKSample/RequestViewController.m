@@ -30,7 +30,12 @@
 -(IBAction)backAView:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+-(void)setText:(id)sender
+{
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    labelJsonResponse.text = [NSString stringWithFormat:@"%@", sender];
 
+}
 -(void)callSDK {
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
@@ -47,12 +52,13 @@
             NSDictionary *kUser = @{@"name" : @"Sample Teste", @"email" : @"sample@teste.com.br", @"data_nascimento" : @"1900-01-01"};
             
             [DitoAPI identify:delegate.credentials accessToken:kAccessToken data:kUser completion:^(id response, NSError *error) {
-                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                
                 
                 if (error) {
-                    labelJsonResponse.text = [NSString stringWithFormat:@"%@", error];
+                    [self performSelectorOnMainThread:@selector(setText:) withObject:error waitUntilDone:YES];
                 } else if (response) {
-                    labelJsonResponse.text = [NSString stringWithFormat:@"%@", response];
+                    [self performSelectorOnMainThread:@selector(setText:) withObject:response waitUntilDone:YES];
+
                 }
             }];
         }

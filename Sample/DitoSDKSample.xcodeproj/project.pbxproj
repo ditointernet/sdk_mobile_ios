@@ -10,27 +10,18 @@
 		08190E681AD5489000C617A8 /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08190E661AD5489000C617A8 /* RequestViewController.m */; };
 		08190E691AD5489000C617A8 /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08190E671AD5489000C617A8 /* RequestViewController.xib */; };
 		082B577E1AD5BEA400DADBD0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 082B577D1AD5BEA400DADBD0 /* MBProgressHUD.m */; };
-		083BE4FA1AD6B7B50037B2FB /* DitoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083BE4F91AD6B7B50037B2FB /* DitoSDK.framework */; };
 		0844C5F71AD44B7F00E74C41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0844C5F61AD44B7F00E74C41 /* main.m */; };
 		0844C5FA1AD44B7F00E74C41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0844C5F91AD44B7F00E74C41 /* AppDelegate.m */; };
 		0844C5FD1AD44B7F00E74C41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0844C5FC1AD44B7F00E74C41 /* ViewController.m */; };
 		0844C6001AD44B7F00E74C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0844C5FE1AD44B7F00E74C41 /* Main.storyboard */; };
 		0844C6021AD44B7F00E74C41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0844C6011AD44B7F00E74C41 /* Images.xcassets */; };
 		0844C6051AD44B7F00E74C41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0844C6031AD44B7F00E74C41 /* LaunchScreen.xib */; };
-		0844C6111AD44B7F00E74C41 /* DitoSDKSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0844C6101AD44B7F00E74C41 /* DitoSDKSampleTests.m */; };
 		0844C61D1AD44BF900E74C41 /* SampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0844C61B1AD44BF900E74C41 /* SampleTableViewCell.m */; };
 		0844C61E1AD44BF900E74C41 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0844C61C1AD44BF900E74C41 /* SampleTableViewCell.xib */; };
+		869B64781B18BB3900FEE48D /* DitoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869B64771B18BB3900FEE48D /* DitoSDK.framework */; };
+		869B647A1B18BB5000FEE48D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869B64791B18BB5000FEE48D /* Security.framework */; };
+		869B647C1B18BB5500FEE48D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869B647B1B18BB5500FEE48D /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0844C60B1AD44B7F00E74C41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0844C5E91AD44B7F00E74C41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0844C5F01AD44B7F00E74C41;
-			remoteInfo = DitoSDKSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08190E651AD5489000C617A8 /* RequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
@@ -38,7 +29,6 @@
 		08190E671AD5489000C617A8 /* RequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
 		082B577C1AD5BEA400DADBD0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		082B577D1AD5BEA400DADBD0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		083BE4F91AD6B7B50037B2FB /* DitoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DitoSDK.framework; sourceTree = "<group>"; };
 		0844C5F11AD44B7F00E74C41 /* DitoSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DitoSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0844C5F51AD44B7F00E74C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0844C5F61AD44B7F00E74C41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,12 +39,14 @@
 		0844C5FF1AD44B7F00E74C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0844C6011AD44B7F00E74C41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0844C6041AD44B7F00E74C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0844C60A1AD44B7F00E74C41 /* DitoSDKSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DitoSDKSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0844C60F1AD44B7F00E74C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0844C6101AD44B7F00E74C41 /* DitoSDKSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DitoSDKSampleTests.m; sourceTree = "<group>"; };
 		0844C61A1AD44BF900E74C41 /* SampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCell.h; sourceTree = "<group>"; };
 		0844C61B1AD44BF900E74C41 /* SampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCell.m; sourceTree = "<group>"; };
 		0844C61C1AD44BF900E74C41 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		869B64771B18BB3900FEE48D /* DitoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DitoSDK.framework; path = ../../../../../../Desktop/DitoSDK.framework; sourceTree = "<group>"; };
+		869B64791B18BB5000FEE48D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		869B647B1B18BB5500FEE48D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				083BE4FA1AD6B7B50037B2FB /* DitoSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0844C6071AD44B7F00E74C41 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				869B647C1B18BB5500FEE48D /* SystemConfiguration.framework in Frameworks */,
+				869B647A1B18BB5000FEE48D /* Security.framework in Frameworks */,
+				869B64781B18BB3900FEE48D /* DitoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +66,7 @@
 		08190E6A1AD54E4A00C617A8 /* DitoSDK */ = {
 			isa = PBXGroup;
 			children = (
-				083BE4F91AD6B7B50037B2FB /* DitoSDK.framework */,
+				869B64771B18BB3900FEE48D /* DitoSDK.framework */,
 			);
 			path = DitoSDK;
 			sourceTree = "<group>";
@@ -121,6 +108,8 @@
 		0844C5E81AD44B7F00E74C41 = {
 			isa = PBXGroup;
 			children = (
+				869B647B1B18BB5500FEE48D /* SystemConfiguration.framework */,
+				869B64791B18BB5000FEE48D /* Security.framework */,
 				0844C5F31AD44B7F00E74C41 /* DitoSDKSample */,
 				0844C60D1AD44B7F00E74C41 /* DitoSDKSampleTests */,
 				0844C5F21AD44B7F00E74C41 /* Products */,
@@ -131,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				0844C5F11AD44B7F00E74C41 /* DitoSDKSample.app */,
-				0844C60A1AD44B7F00E74C41 /* DitoSDKSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,24 +192,6 @@
 			productReference = 0844C5F11AD44B7F00E74C41 /* DitoSDKSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0844C6091AD44B7F00E74C41 /* DitoSDKSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0844C6171AD44B7F00E74C41 /* Build configuration list for PBXNativeTarget "DitoSDKSampleTests" */;
-			buildPhases = (
-				0844C6061AD44B7F00E74C41 /* Sources */,
-				0844C6071AD44B7F00E74C41 /* Frameworks */,
-				0844C6081AD44B7F00E74C41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0844C60C1AD44B7F00E74C41 /* PBXTargetDependency */,
-			);
-			name = DitoSDKSampleTests;
-			productName = DitoSDKSampleTests;
-			productReference = 0844C60A1AD44B7F00E74C41 /* DitoSDKSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,10 +203,6 @@
 				TargetAttributes = {
 					0844C5F01AD44B7F00E74C41 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					0844C6091AD44B7F00E74C41 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 0844C5F01AD44B7F00E74C41;
 					};
 				};
 			};
@@ -254,7 +220,6 @@
 			projectRoot = "";
 			targets = (
 				0844C5F01AD44B7F00E74C41 /* DitoSDKSample */,
-				0844C6091AD44B7F00E74C41 /* DitoSDKSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,13 +234,6 @@
 				0844C6051AD44B7F00E74C41 /* LaunchScreen.xib in Resources */,
 				0844C6021AD44B7F00E74C41 /* Images.xcassets in Resources */,
 				08190E691AD5489000C617A8 /* RequestViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0844C6081AD44B7F00E74C41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,23 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0844C6061AD44B7F00E74C41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0844C6111AD44B7F00E74C41 /* DitoSDKSampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0844C60C1AD44B7F00E74C41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0844C5F01AD44B7F00E74C41 /* DitoSDKSample */;
-			targetProxy = 0844C60B1AD44B7F00E74C41 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0844C5FE1AD44B7F00E74C41 /* Main.storyboard */ = {
@@ -421,6 +363,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DitoSDKSample/DitoSDK",
 					"/Users/marcoslacerda/Documents/ditosdk-2.0/DitoSDK/Products",
+					/Users/gilsonjunior/Desktop,
 				);
 				INFOPLIST_FILE = DitoSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -443,6 +386,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DitoSDKSample/DitoSDK",
 					"/Users/marcoslacerda/Documents/ditosdk-2.0/DitoSDK/Products",
+					/Users/gilsonjunior/Desktop,
 				);
 				INFOPLIST_FILE = DitoSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,40 +394,6 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s arm64";
-			};
-			name = Release;
-		};
-		0844C6181AD44B7F00E74C41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DitoSDKSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DitoSDKSample.app/DitoSDKSample";
-			};
-			name = Debug;
-		};
-		0844C6191AD44B7F00E74C41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DitoSDKSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DitoSDKSample.app/DitoSDKSample";
 			};
 			name = Release;
 		};
@@ -504,15 +414,6 @@
 			buildConfigurations = (
 				0844C6151AD44B7F00E74C41 /* Debug */,
 				0844C6161AD44B7F00E74C41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0844C6171AD44B7F00E74C41 /* Build configuration list for PBXNativeTarget "DitoSDKSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0844C6181AD44B7F00E74C41 /* Debug */,
-				0844C6191AD44B7F00E74C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

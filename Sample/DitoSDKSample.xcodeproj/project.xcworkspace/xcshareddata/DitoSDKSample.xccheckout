@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>834C791B-04E9-41C3-B837-F4CDB4D04347</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DitoSDKSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22A28E763E63C6E9040560D1A36CC75FE8B09981</key>
+		<string>https://bitbucket.org/ioasys/dito-sdk-2.0-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Sample/DitoSDKSample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22A28E763E63C6E9040560D1A36CC75FE8B09981</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/ioasys/dito-sdk-2.0-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22A28E763E63C6E9040560D1A36CC75FE8B09981</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22A28E763E63C6E9040560D1A36CC75FE8B09981</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dito-sdk-2.0-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
